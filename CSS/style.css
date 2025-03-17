@@ -1,0 +1,168 @@
+:root {
+    --colorPrimary: #05D781;
+    --corlorSecondary: #039375;
+    --colorText: #262626;
+}
+
+
+
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #262626;
+    position: relative;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorText);
+}
+
+.container {
+    max-width: 1199px;
+    margin: auto;
+    
+}
+
+.section__inner {
+    padding-top: 100px;
+}
+
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.header__content li {
+    padding: 55px 15px;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+.header__content nav i{
+    font-size: 9px;
+    margin-right: -3px;
+    vertical-align: middle;
+}
+
+.header__content li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #070120;
+}
+.header__content li span {
+    display: inline-block;
+    transition: all 0.3s;
+    margin-right: 4px;
+}
+
+.header__content li:hover a {
+    color: var(--corlorSecondary);
+}
+
+.header__content a:hover span {
+    animation-name: upToDown;
+    animation-duration: 0.3s;
+}
+
+/* INTRO */
+.carousel {
+    padding-top: 120px;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 86.5vh; /* Điều chỉnh chiều cao theo nhu cầu */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+/* Tùy chỉnh navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+#carousel .mySwiper .swiper-button-next{
+    color: '#fff';
+    z-index: 999;
+}
+
+/* Tùy chỉnh pagination */
+.swiper-pagination-bullet {
+    background: #ffffff;
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--corlorSecondary); /* Màu bạn muốn cho bullet đang active */
+}
+
