@@ -1,168 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- OWN CAROUSEL CSS -->
-    <link rel="stylesheet" href="./CSS/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./CSS/owl.theme.default.min.css" />
 
-   <!-- Swiper CSS -->
-   <link
-   rel="stylesheet"
-   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
- />
-    <!-- animation -->
-    <link rel="stylesheet" href="./CSS/animate.css" />
-    <!-- font -->
-    <link rel="stylesheet" href="./CSS/Flaticon/flaticon.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <title>Đồng Nai Kratie</title>
-  </head>
-  <body>
-    <!-- -----------Start Header-------------- -->
-    <header>
-      <div class="container">
-        <div class="header__content">
-          <div class="logo">
-            <a href="#"
-              ><img src="/assets//img/Logo_DNKC_RGB.png" alt="logo1"
-            /></a>
-            <h4>Đồng Nai Kratie</h4>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- fontawesome -->
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
-          <nav>
-            <ul>
-              <li>
-                <a href="">
-                  <span>Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="#features">
-                  <span>Pages</span>
-                </a>
-              </li>
-              <li>
-                <a href="#services">
-                  <span>Services</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>Post Layout</span>
-                </a>
-              </li>
-              <li>
-                <a href="#blog">
-                  <span>Blog</span>
-                </a>
-              </li>
-              <li>
-                <a href="#footer">
-                  <span>Contact Us</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+
+  <!-- OWN CAROUSEL CSS -->
+  <link rel="stylesheet" href="./CSS/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./CSS/owl.theme.default.min.css" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- animation -->
+  <link rel="stylesheet" href="./CSS/animate.css" />
+  <!-- font -->
+  <link rel="stylesheet" href="./CSS/Flaticon/flaticon.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <title>Đồng Nai Kratie</title>
+</head>
+
+<body>
+  <!-------------Header---------------->
+  <header>
+    <div class="container">
+      <div class="header__content">
+        <div class="logo">
+          <a href="#"><img src="/assets//img/Logo_DNKC_RGB.png" alt="logo1" /></a>
+          <h4 class="logo_text">CÔNG TY CỔ PHẨN CAO SU <br> ĐỒNG NAI KRATIE</h4>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <span>Trang chủ</span>
+              </a>
+            </li>
+            <li>
+              <a href="#aboutUs">
+                <span>Giới thiệu</span>
+              </a>
+            </li>
+            <li>
+              <a href="#product">
+                <span>Sản phẩm</span>
+              </a>
+            </li>
+            <li>
+              <a href="#info">
+                <span>Công bố thông tin</span>
+              </a>
+            </li>
+            <li>
+              <a href="#blog">
+                <span>Tin tức</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <span>Liên hệ</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!---------------------------------->
+  <!-------------Carousel------------->
+  <section id="carousel" class="carousel">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="/assets/img/Slider1.jpg" alt="Slide 1" style="width: 100%; height: auto;">
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="/assets/img/Slider2.jpg" alt="Slide 2" style="width: 100%; height: auto;">
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="/assets/img/Slider3.jpg" alt="Slide 3" style="width: 100%; height: auto;">
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <img src="/assets/img/Slider4.jpg" alt="Slide 4" style="width: 100%; height: auto;">
         </div>
       </div>
-    </header>
-    <!--------------End Header---------------->
-    <!-------------Start Carousel------------->
-    <section id="carousel" class="carousel">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                    <img src="/assets/img/Slider1.jpg" alt="Slide 1" style="width: 100%; height: auto;">
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- Scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </section>
+  <!----------------------------->
+  <!-------------About US-------->
+
+  <!-- ABOUT US -->
+  <section id="about" class="about section__inner">
+    <div class="container">
+      <div class="about__content">
+        <div class="about__left wow animated">
+          <img src="./assets/img/Slider1.jpg" alt="pic1">
+        </div>
+        <div class="about__right wow animated">
+          <div class="title">
+            <h3>About Us</h3>
+            <h2>CÔNG TY CỔ PHẦN CAO SU ĐỒNG NAI-KRATIE
+          </div>
+          <p>Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim. Vivamus
+            blandit, dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis neque et nulla. Sed
+            euismod turpis id nibh suscipit semper. Pellentesque dapibus risus arcu.</p>
+          <ul>
+            <li>
+              <i class="flaticon-check"></i>We support programs that create advancement opportunities for
+              people.
+            </li>
+            <li>
+              <i class="flaticon-check"></i>Get a view of events and trends. Be updated on our recent
+              news.
+            </li>
+            <li>
+              <i class="flaticon-check"></i>Finally, it all comes down to people. Creating a winning team.
+            <li>
+              <i class="flaticon-check"></i>Get a view of events and trends. Be updated on our recent
+              news.
+            </li>
+          </ul>
+          <button class="btn-gradient"><a href="/Page/aboutUs.html">XEM THÊM</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUMBER -->
+  <section class="number section__inner">
+    <div class="container">
+      <div class="number__content">
+        <div class="number__item">
+          <i class="flaticon-line-chart"></i>
+          <p><span class="counter">6.398</span></p>
+          <p>Diện tích quản lý</p>
+        </div>
+        <div class="number__item">
+          <i class="fi fi-rr-user"></i>
+          <p><span class="counter">3.000</span></p>
+          <p>Lao động</p>
+        </div>
+        <div class="number__item">
+          <i class="flaticon-startup"></i>
+          <p><span class="counter">30.000</span></p>
+          <p>Sản lượng thu hoạch</p>
+        </div>
+        <div class="number__item">
+          <i class="flaticon-confetti"></i>
+          <p><span class="counter">10</span></p>
+          <p>Nông trường</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----Product------ -->
+  <section id="product" class="product section__inner">
+    <div class="container">
+      <div class="product__content">
+        <div class="product__left wow animated">
+          <div class="title">
+            <h3>Product</h3>
+            <!-- <h2>CÔNG TY CỔ PHẦN CAO SU
+              ĐỒNG NAI-KRATIE</h2> -->
+          </div>
+          <p>Với công nghệ sản xuất tiên tiến và quy trình kiểm soát nghiêm ngặt, chúng tôi cam kết cung cấp sản phẩm
+            cao su đáp ứng tiêu chuẩn quốc tế, đảm bảo độ bền, độ đàn hồi và tính ứng dụng đa dạng cho nhiều nhu cầu
+            công nghiệp.</p>
+
+          <button class="btn-gradient"><a href="#">XEM THÊM</a></button>
+        </div>
+        <div class="product__right wow animated">
+          <div class="product__view">
+            <div class="product__item">
+              <img src="./assets/img/CSR.png" alt="pic1-1">
+              <p>SVR 10</p>
+            </div>
+            <div class="product__item">
+              <img src="./assets/img/CSR.png" alt="pic1-1">
+              <p>SVR 10</p>
+            </div>
+            <div class="product__item">
+              <img src="./assets/img/CSR.png" alt="pic1-1">
+              <p>SVR 10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="blog section__inner">
+    <div class="container">
+        <div class="title">
+            <p>
+                Our Blog
+            </p>
+            <h2>Latest News & Blog</h2>
+        </div>
+        <div class="blog__content owl-carousel owl-theme">
+            <div class="blog__item">
+                <div class="blog__header">
+                    <img src="./assets/img/DT01.jpg" alt="pic1-1">
+                    <p class="blog__date">23 MARCH 2022</p>
                 </div>
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                    <img src="/assets/img/Slider2.jpg" alt="Slide 2" style="width: 100%; height: auto;">
+                <div class="blog__body">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cupiditate repellat vitae
+                        culpa provident blanditiis.</p>
                 </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide">
-                    <img src="/assets/img/Slider3.jpg" alt="Slide 3" style="width: 100%; height: auto;">
-                </div>
-                <!-- Slide 4 -->
-                <div class="swiper-slide">
-                    <img src="/assets/img/Slider4.jpg" alt="Slide 4" style="width: 100%; height: auto;">
+                <div class="blog__footer">
+                    <i class="las la-user-circle"></i>
+                    <p>BY <span>JOHNE DOE</span></p>
+                    <i class="las la-comment"></i>
+                    <p>COMMENTS 15</p>
                 </div>
             </div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-    
-            <!-- Navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-    
-            <!-- Scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <div class="blog__item">
+                <div class="blog__header">
+                    <img src="./assets/img/DTP_7092.jpg" alt="pic2">
+                    <p class="blog__date">23 MARCH 2022</p>
+                </div>
+                <div class="blog__body">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cupiditate repellat vitae
+                        culpa provident blanditiis.</p>
+                </div>
+                <div class="blog__footer">
+                    <i class="las la-user-circle"></i>
+                    <p>BY <span>JOHNE DOE</span></p>
+                    <i class="las la-comment"></i>
+                    <p>COMMENTS 15</p>
+                </div>
+            </div>
+            <div class="blog__item">
+                <div class="blog__header">
+                    <img src="./assets/img/DTP_7362.jpg" alt="pic3">
+                    <p class="blog__date">23 MARCH 2022</p>
+                </div>
+                <div class="blog__body">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cupiditate repellat vitae
+                        culpa provident blanditiis.</p>
+                </div>
+                <div class="blog__footer">
+                    <i class="las la-user-circle"></i>
+                    <p>BY <span>JOHNE DOE</span></p>
+                    <i class="las la-comment"></i>
+                    <p>COMMENTS 15</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- cdn jquery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- wow js animation -->
-    <script src="JS/wow.min.js"></script>
+  <!-- cdn jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- wow js animation -->
+  <script src="JS/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- COUNTING UP NUMBER -->
+  <script src="./JS/jquery.countup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+
+  </script>
+  <!-- OWN CAROUSEL -->
+  <script src="./JS/owl.carousel.min.js"></script>
     <script>
-      new WOW().init();
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
     </script>
-   
-    </script>
-    <!-- OWN CAROUSEL -->
-    <script src="./JS/owl.carousel.min.js"></script>
-    <script>
-        const swiper = new Swiper('.mySwiper', {
-            // Optional parameters
-            loop: true,           // Lặp vô hạn
-            autoplay: {           // Tự động chạy
-                delay: 5000,      // Thời gian giữa các slide (3 giây)
-                disableOnInteraction: false,
-            },
-            speed: 700,           // Tốc độ chuyển slide
-    
-            // Pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,  // Có thể click vào pagination
-            },
-    
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-    
-            // Scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                hide: false,
-            },
-        });
-    </script>
-  </body>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      // Optional parameters
+      loop: true,           // Lặp vô hạn
+      autoplay: {           // Tự động chạy
+        delay: 5000,      // Thời gian giữa các slide (3 giây)
+        disableOnInteraction: false,
+      },
+      speed: 700,           // Tốc độ chuyển slide
+
+      // Pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,  // Có thể click vào pagination
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // Scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+      },
+    });
+  </script>
+</body>
+
 </html>
