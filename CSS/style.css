@@ -10,6 +10,8 @@
     --fontSizeTitle: 60px;
     --fontSizeText: 20px;
     --bgColor1: #fcf7f7;
+    --title-p-color: #f53626;
+    --bgColorFooter: #dff5eb;
     }
 
 
@@ -58,10 +60,13 @@ a {
 
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999;
+    background-color: var(--colorWhite);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 header img {
@@ -261,7 +266,6 @@ nav {
     cursor: pointer;
     transition: all 0.5s;
     line-height: 1.2;
-    margin-top: 20px;
 }
 
 .btn-gradient a{
@@ -428,11 +432,28 @@ nav {
     background-repeat: no-repeat;
     background-position: center top;
     text-align: center;
+    margin-bottom: 100px;
+    
+}
+
+.blog .title{
+    padding-bottom: 85px;
+    
+}
+.blog .title h3{
+    font-size: 50px;
+    color: var(--colorSecondary);
+}
+
+.blog .title h4{
+    font-size: 30px;
+    color: var(--colorText);
 }
 
 .blog__item {
-    background-color: var(--colorWhite);
+    background-color: var(--bgColor1);
     border-radius: 10px;
+    
 }
 
 .blog__header {
@@ -449,13 +470,14 @@ nav {
 .blog__header p {
     position: absolute;
     left: 20px;
-    bottom: -20px;
+    bottom: -35px;
     background: linear-gradient(to right, var(--colorPrimary) 0, var(--colorSecondary) 51%, var(--colorPrimary) 100%);
     background-size: 200%;
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .blog__body {
@@ -463,11 +485,22 @@ nav {
     text-align: left;
     line-height: 1.4;
     margin-bottom: 20px;
+    height: 170px;
 }
 
 .blog__body h3 {
     font-size: 22px;
     font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.blog__body p{
+    max-height: 3em;          /* Giới hạn chiều cao (ví dụ: 3 dòng) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;    /* Số dòng tối đa */
+    -webkit-box-orient: vertical;
 }
 
 .blog__footer {
@@ -480,7 +513,7 @@ nav {
 }
 
 .blog__footer i {
-    color: #F55F8D;
+    color: var(--colorSecondary);
     font-size: 22px;
     vertical-align: sub;
     margin-right: 5px;
@@ -491,9 +524,83 @@ nav {
 }
 
 .blog__footer p:first-of-type span {
-    color: #F55F8D;
+    color: var(--colorSecondary);
 }
 
 .blog__footer p{
     vertical-align: middle;
 }
+/* FOOTER */
+footer {
+    background-color: var(--bgColorFooter);
+    color: #ffffff;
+  }
+  
+  .footer__content h3 {
+    font-size: 25px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--colorText);
+  }
+  
+  .footer-contact span {
+    color: var(--colorText);
+    font-weight: 700;
+  }
+  
+  .footer__content a,
+  .footer__content li,.footer__content p {
+    color: var(--colorText);
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .footer__content ul{
+    padding-left: 0;
+  }
+  
+  .footer__content a:hover {
+    color: var(--colorSecondary);
+  }
+  
+  .footer-social span {
+    margin-right: 20px;
+    transition: all 0.5s;
+    margin-top: 10px;
+  }
+  
+  .footer__bottom {
+    padding: 20px 0;
+    border-top: 1px solid rgba(105, 105, 105, 0.1);
+  }
+
+  .footer__bottom p{
+    color: var(--colorText);
+  }
+  
+  .footer__bottom span {
+    color: var(--colorSecondary);
+  }
+
+  input{
+    padding: 10px ;
+    width: 90%;
+    border-color: transparent;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-left: 10px;
+  }
+
+  input:focus{
+    outline: none;
+    border-color: var(--colorSecondary);
+    border-width: 1px;
+  }
+
+  .footer__content .mail{
+    display: flex;
+    align-items: center;
+  }
+  
+
