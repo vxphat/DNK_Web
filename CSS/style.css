@@ -1039,6 +1039,10 @@ header .logo img {
   padding: 15px 10px;
   width: 100%;
 }
+.footer__content .mail input {
+  width: 100%;
+  margin-bottom: 10px;
+}
 }
 @media screen and (max-width: 376px){
     /* Global */
