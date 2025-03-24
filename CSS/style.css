@@ -899,8 +899,27 @@ header .navbar-nav .nav-item {
 }
 
 /* Footer */
+.footer__top {
+  padding: 0 10px; /* Giảm padding để tận dụng chiều ngang */
+}
+
 .footer__content {
-    padding: 0 15px;
+  width: 100%;
+  padding: 0; /* Bỏ padding để full-width */
+}
+
+.footer__content .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer__content .col-5,
+.footer__content .col-md-5,
+.footer__content .col-lg-7,
+.footer__content .col-lg-5,
+.footer__content .col-sm-4 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 }
 @media screen and (max-width: 575.85px){
@@ -971,6 +990,54 @@ header .logo img {
 
 .blog__body h3 {
     font-size: 18px;
+}
+
+/* Footer */
+.footer__top {
+  padding: 0 10px; /* Giảm padding để full-width */
+}
+
+.footer__content {
+  width: 100%;
+  padding: 0; /* Bỏ padding để tận dụng toàn bộ chiều ngang */
+}
+
+.footer__content .row {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.footer__content .col-5,
+.footer__content .col-md-5,
+.footer__content .col-lg-7,
+.footer__content .col-lg-5,
+.footer__content .col-sm-4 {
+  width: 100%; /* Đảm bảo mỗi cột chiếm full chiều ngang */
+  max-width: 100%; /* Loại bỏ giới hạn chiều rộng mặc định */
+  margin-bottom: 30px; /* Thêm khoảng cách giữa các cột */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer__content .mail.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer__content .mail input {
+  width: 70%; /* Điều chỉnh để nút Gửi vừa hàng */
+  margin-left: 0;
+}
+
+.footer__content .mail button {
+  width: 25%; /* Đảm bảo nút Gửi vừa hàng */
+  padding: 10px 0;
+}
+
+.footer__bottom {
+  padding: 15px 10px;
+  width: 100%;
 }
 }
 @media screen and (max-width: 376px){
@@ -1056,8 +1123,17 @@ header .logo img {
   
   /* Footer */
   .footer__content h3 {
-      font-size: 20px;
-  }
+    font-size: 20px;
+}
+
+input {
+    width: 70%; /* Đồng bộ với mail input */
+    padding: 8px;
+}
+
+.footer__content .mail button {
+    width: 25%;
+}
   
   input {
       width: 85%;
