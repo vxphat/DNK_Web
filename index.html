@@ -3,10 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="./assets/img/Logo_DNK_RGB.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- fontawesome -->
   <link rel='stylesheet'
     href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -22,17 +26,21 @@
   <link rel="stylesheet" href="./CSS/animate.css" />
   <!-- font -->
   <link rel="stylesheet" href="./CSS/Flaticon/flaticon.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&display=swap"
+    rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" /> -->
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
   <link rel="stylesheet" href="./CSS/style.css" />
   <title>Đồng Nai Kratie</title>
 </head>
 
-<body>
+<body id="myBody">
   <!-------------Header---------------->
-  <header>
-    <div class="container">
+  <header class="fixed-top">
+    <!-- ver cũ -->
+    <!-- <div class="container">
       <div class="header__content">
         <div class="logo">
           <a href="#"><img src="/assets//img/Logo_DNK_RGB.png" alt="logo1" /></a>
@@ -74,7 +82,67 @@
           </ul>
         </nav>
       </div>
+    </div> -->
+<!-- ------------------------------------------- -->
+<!-- Ver mới -->
+<div class="container">
+  <nav class="navbar navbar-expand-lg  navbar-dark">
+    <!-- Brand -->
+    <div class=" navbar-brand logo">
+      <a href="#"><img src="/assets//img/Logo_DNK_RGB.png" alt="logo1" /></a>
+      <h4 class="logo_text">CÔNG TY CỔ PHẦN CAO SU <br> ĐỒNG NAI-KRATIE</h4>
     </div>
+    <!-- <a class="navbar-brand Logo" href="#">Pooch Care</a> -->
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler p-0 me-2" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+      <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sản phẩm</a>
+        </li>
+        <li class="nav-item nav__dropdown">
+          <div class="dropdown">
+            <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+              Dịch vụ
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item dropdown-item1" href="#">Truy suất nguồn gốc</a>
+              <a class="dropdown-item dropdown-item2" href="#">Gia công mủ cao su</a>
+              <a class="dropdown-item dropdown-item3" href="#">Trồng và chăm sóc cao su</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tin tức</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Liên hệ</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="light-dark">
+      <button class="btn" id="switchButton">
+        <i class="far fa-moon"></i>
+        <i class="far fa-sun"></i>
+      </button>
+    </div> -->
+  </nav>
+</div>
+
+
   </header>
   <!---------------------------------->
   <!-------------Carousel------------->
@@ -123,7 +191,6 @@
         <div class="about__right wow animated">
           <div class="title">
             <h3>GIỚI THIỆU</h3>
-            
           </div>
           <p>Công ty Cổ phần Cao su Đồng Nai – Kratie được thành lập theo Quyết định số 81/QĐ-CSVN của Tập đoàn Công nghiệp Cao su Việt Nam (VRG) quyết định về việc phê duyệt phương án góp vốn thành lập Công ty CPCS Đồng Nai – Kratie vào năm 2008.</p>
           <p>Với tổng diện tích trồng cao su 6.398 ha tại 2 xã O’Kreang và Roluos Meanchey, huyện Sambo, tỉnh Kratie, Vương quốc Campuchia. Tổng vốn đầu tư là 1.217.380.359.000 đồng, 100% là vốn đầu tư của doanh nghiệp Nhà nước.</p>
@@ -296,11 +363,12 @@
                 <div class="col-lg-5 col-sm-4">
                   <h3>Liên kết nhanh</h3>
                   <ul>
-                    <li><a href="/Page/aboutUs.html">Giới thiệu</a></li>
-                    <li><a href="">Sản phẩm</a></li>
-                    <li><a href="">Công bố thông tin</a></li>
-                    <li><a href="">Tin tức</a></li>
-                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Công bố thông tin</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="/policy.html">Điều khoản sử dụng</a></li>
                   </ul>
                 </div>
                 <div class="col-lg-7 col-sm-4">
@@ -348,6 +416,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- wow js animation -->
   <script src="JS/wow.min.js"></script>
@@ -363,7 +444,7 @@
     $('.counter').countUp();
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 
   </script>
   <!-- OWN CAROUSEL -->
@@ -416,6 +497,12 @@
         hide: false,
       },
     });
+  </script>
+  <!-- light-dark -->
+  <script>
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+    };
   </script>
 </body>
 
