@@ -1016,8 +1016,8 @@ header .logo img {
   width: 100%; /* Đảm bảo mỗi cột chiếm full chiều ngang */
   max-width: 100%; /* Loại bỏ giới hạn chiều rộng mặc định */
   margin-bottom: 30px; /* Thêm khoảng cách giữa các cột */
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
 
 .footer__content .mail.row {
