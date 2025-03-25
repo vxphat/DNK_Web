@@ -1172,3 +1172,56 @@ input {
 
 }
 
+/* GEOJON */
+.geojson h3 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+
+
+.geojson .geojson_content input {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+  color: var(--colorText);
+  font-weight: 600;
+  
+}
+
+.geojson_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  /* Khoảng cách giữa các phần tử */
+  width: 100%;
+  max-width: 1000px;
+  /* Độ rộng tối đa, bạn có thể điều chỉnh */
+  margin: 0 auto;
+  /* Canh giữa container */
+}
+
+.geojson_content input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.geojson_content button {
+  width: 50%;
+  padding: 10px;
+}
+
+.geojson_content textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 8px;
+  box-sizing: border-box;
+  resize: vertical;
+  align-items: center;
+}
