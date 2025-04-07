@@ -1001,6 +1001,49 @@ input:focus {
     /* Thêm khoảng cách giữa các cột */
     /* padding-left: 15px;
   padding-right: 15px; */
+    /* <<<<<<< HEAD======= */
+  }
+
+  .footer__content .footer_body .col-lg-5,
+  .footer__content .footer_body .col-lg-7,
+  .footer__content .footer_body .col-sm-4 {
+    padding: 0;
+  }
+
+  .footer__content .mail.row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .footer__content .footer_body .row {
+    padding: 0 !important;
+  }
+
+  .footer__content .mail input {
+    width: 70%;
+    /* Điều chỉnh để nút Gửi vừa hàng */
+    margin-left: 0;
+  }
+
+  .footer__content .mail button {
+    width: 25%;
+    /* Đảm bảo nút Gửi vừa hàng */
+    padding: 10px 0;
+  }
+
+  .footer__bottom {
+    padding: 15px 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+
+  /* Global */
+  html {
+    font-size: 14px;
   }
 
   .footer__content .mail.row {
@@ -1142,5 +1185,4 @@ input:focus {
     width: 25%;
     margin-top: 10px;
   }
-
 }

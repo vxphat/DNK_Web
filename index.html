@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- fontawesome -->
   <link rel='stylesheet'
     href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -39,109 +39,64 @@
 <body id="myBody">
   <!-------------Header---------------->
   <header class="fixed-top">
-    <!-- ver cũ -->
-    <!-- <div class="container">
-      <div class="header__content">
-        <div class="logo">
+ 
+    <!-- Ver mới -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg  navbar-dark">
+        <!-- Brand -->
+        <div class=" navbar-brand logo">
           <a href="#"><img src="/assets//img/Logo_DNK_RGB.png" alt="logo1" /></a>
           <h4 class="logo_text">CÔNG TY CỔ PHẦN CAO SU <br> ĐỒNG NAI-KRATIE</h4>
         </div>
 
-        <nav>
-          <ul>
-            <li>
-              <a href="#">
-                <span>Trang chủ</span>
-              </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler p-0 me-2" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Trang chủ</a>
             </li>
-            <li>
-              <a href="#aboutUs">
-                <span>Giới thiệu</span>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
             </li>
-            <li>
-              <a href="#product">
-                <span>Sản phẩm</span>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sản phẩm</a>
             </li>
-            <li>
-              <a href="#info">
-                <span>Công bố thông tin</span>
-              </a>
+            <li class="nav-item nav__dropdown">
+              <div class="dropdown">
+                <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                  Dịch vụ
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item dropdown-item1" href="/tracebility.html">Truy suất nguồn gốc</a>
+                  <a class="dropdown-item dropdown-item2" href="#">Gia công mủ cao su</a>
+                  <a class="dropdown-item dropdown-item3" href="#">Trồng và chăm sóc cao su</a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="#blog">
-                <span>Tin tức</span>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tin tức</a>
             </li>
-            <li>
-              <a href="#contact">
-                <span>Liên hệ</span>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </div> -->
-<!-- ------------------------------------------- -->
-<!-- Ver mới -->
-<div class="container">
-  <nav class="navbar navbar-expand-lg  navbar-dark">
-    <!-- Brand -->
-    <div class=" navbar-brand logo">
-      <a href="#"><img src="/assets//img/Logo_DNK_RGB.png" alt="logo1" /></a>
-      <h4 class="logo_text">CÔNG TY CỔ PHẦN CAO SU <br> ĐỒNG NAI-KRATIE</h4>
-    </div>
-    <!-- <a class="navbar-brand Logo" href="#">Pooch Care</a> -->
-
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler p-0 me-2" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-      <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-      
-    </button>
-
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Trang chủ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Giới thiệu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sản phẩm</a>
-        </li>
-        <li class="nav-item nav__dropdown">
-          <div class="dropdown">
-            <button type="button" class="dropdown-toggle" data-toggle="dropdown">
-              Dịch vụ
-              <i class="fa-solid fa-angle-down"></i>
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item dropdown-item1" href="#">Truy suất nguồn gốc</a>
-              <a class="dropdown-item dropdown-item2" href="#">Gia công mủ cao su</a>
-              <a class="dropdown-item dropdown-item3" href="#">Trồng và chăm sóc cao su</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tin tức</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Liên hệ</a>
-        </li>
-      </ul>
-    </div>
-    <!-- <div class="light-dark">
+        </div>
+        <!-- <div class="light-dark">
       <button class="btn" id="switchButton">
         <i class="far fa-moon"></i>
         <i class="far fa-sun"></i>
       </button>
     </div> -->
-  </nav>
-</div>
+      </nav>
+    </div>
 
 
   </header>
@@ -193,8 +148,12 @@
           <div class="title">
             <h3>GIỚI THIỆU</h3>
           </div>
-          <p>Công ty Cổ phần Cao su Đồng Nai – Kratie được thành lập theo Quyết định số 81/QĐ-CSVN của Tập đoàn Công nghiệp Cao su Việt Nam (VRG) quyết định về việc phê duyệt phương án góp vốn thành lập Công ty CPCS Đồng Nai – Kratie vào năm 2008.</p>
-          <p>Với tổng diện tích trồng cao su 6.398 ha tại 2 xã O’Kreang và Roluos Meanchey, huyện Sambo, tỉnh Kratie, Vương quốc Campuchia. Tổng vốn đầu tư là 1.217.380.359.000 đồng, 100% là vốn đầu tư của doanh nghiệp Nhà nước.</p>
+          <p>Công ty Cổ phần Cao su Đồng Nai – Kratie được thành lập theo Quyết định số 81/QĐ-CSVN của Tập đoàn Công
+            nghiệp Cao su Việt Nam (VRG) quyết định về việc phê duyệt phương án góp vốn thành lập Công ty CPCS Đồng Nai
+            – Kratie vào năm 2008.</p>
+          <p>Với tổng diện tích trồng cao su 6.398 ha tại 2 xã O’Kreang và Roluos Meanchey, huyện Sambo, tỉnh Kratie,
+            Vương quốc Campuchia. Tổng vốn đầu tư là 1.217.380.359.000 đồng, 100% là vốn đầu tư của doanh nghiệp Nhà
+            nước.</p>
           <button class="btn-gradient"><a href="#">XEM THÊM</a></button>
         </div>
       </div>
@@ -215,7 +174,7 @@
           <p>Lao động</p>
         </div>
         <div class="number__item">
-          
+
           <p><span class="counter">8.000</span></p>
           <p>Sản lượng thu hoạch</p>
         </div>
@@ -223,6 +182,8 @@
          
           <p><span class="counter">16</span></p>
           <p>Tổ sản suất</p>
+
+          
         </div>
       </div>
     </div>
@@ -337,11 +298,14 @@
                 <div class="CS1">
                   <ul>
                     <li>
-                      <p><span> Trụ sở chính: </span>CÔNG TY TNHH PHÁT TRIỂN CAO SU ĐỒNG NAI KRATIE (DONG NAI KRATIE APHIVATH CAOUTCHOUC Co., Ltd)</p>
-                      <p><span>Địa chỉ cũ: </span>#666, đường số 02, làng Phsar veng, Sangkat Kratie, thành phố Kratie, tỉnh Kratie.</p>
-                      <p><span>Địa chỉ mới: </span>Làng Or'Pras, xã Or'kandear Senchey, huyện Or'Kreang Senchey, tỉnh Kratie.</p>
+                      <p><span> Trụ sở chính: </span>CÔNG TY TNHH PHÁT TRIỂN CAO SU ĐỒNG NAI KRATIE (DONG NAI KRATIE
+                        APHIVATH CAOUTCHOUC Co., Ltd)</p>
+                      <p><span>Địa chỉ cũ: </span>#666, đường số 02, làng Phsar veng, Sangkat Kratie, thành phố Kratie,
+                        tỉnh Kratie.</p>
+                      <p><span>Địa chỉ mới: </span>Làng Or'Pras, xã Or'kandear Senchey, huyện Or'Kreang Senchey, tỉnh
+                        Kratie.</p>
                     </li>
-                    <li><span>Điện thoại: </span><a href="tel:+855979295666">+855 979298666 / +855 979298666</a></li>
+                    <li><span>Điện thoại: </span><a href="tel:+855979295666">+855 979295666 </a> / <a href="tel:+855979298666">+855 979298666</li>
                     <li><span>Email: </span><a href="mailto:caosudnkc@gmail.com"> caosudnkc@gmail.com</a></li>
                   </ul>
                 </div>
@@ -349,15 +313,14 @@
                   <ul>
                     <li>
                       <p><span> VP đại diện: </span>CÔNG TY CỔ PHẦN CAO SU ĐỒNG NAI - KRATIE</p>
-                      <p><span>Địa chỉ: </span>Số 13, đường số 03, khu phố Trung Tâm, phường Xuân Lập, thành phố Long Khánh, tỉnh Đồng Nai.</p>
+                      <p><span>Địa chỉ: </span>Số 13, đường số 03, khu phố Trung Tâm, phường Xuân Lập, thành phố Long
+                        Khánh, tỉnh Đồng Nai.</p>
                     </li>
                     <li><span>Điện thoại: </span><a href="tel:+02513643103">0251 3643 103</a></li>
                     <li><span>Email: </span><a href="mailto:caosudnkc@gmail.com"> caosudnkc@gmail.com</a></li>
                   </ul>
                 </div>
-                
               </div>
-              
             </div>
             <div class="footer_body col-lg-7">
               <div class="row">
@@ -369,7 +332,7 @@
                     <li><a href="#">Công bố thông tin</a></li>
                     <li><a href="#">Tin tức</a></li>
                     <li><a href="#">Liên hệ</a></li>
-                    <li><a href="/policy.html">Điều khoản sử dụng</a></li>
+                    <!-- <li><a href="/policy.html">Điều khoản sử dụng</a></li> -->
                   </ul>
                 </div>
                 <div class="col-lg-7 col-sm-4">
@@ -379,7 +342,7 @@
                     <input type="text" class="col-8 me-3" placeholder="Email Adrress">
                     <button class="col-3 btn-gradient">Gửi</button>
                   </div>
-                  
+
                   <div class="footer-social mt-2">
                     <ul class="d-flex">
                       <li><a href="#" title="Facebook">
@@ -396,9 +359,12 @@
                         </a></li>
                     </ul>
                   </div>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2738.6435274493288!2d106.22499274827612!3d13.297179046062196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDE3JzQ5LjQiTiAxMDbCsDEzJzM0LjQiRQ!5e1!3m2!1svi!2s!4v1742350398860!5m2!1svi!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2738.6435274493288!2d106.22499274827612!3d13.297179046062196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDE3JzQ5LjQiTiAxMDbCsDEzJzM0LjQiRQ!5e1!3m2!1svi!2s!4v1742350398860!5m2!1svi!2s"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                
+
               </div>
             </div>
 
@@ -418,7 +384,7 @@
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
